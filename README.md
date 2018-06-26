@@ -1,4 +1,4 @@
-# Contact Us
+# Contact Us Page
 
 ## Project Purpose
 Demonstrate critical HTML and CSS abilities as well as higher-level Javascript concepts.
