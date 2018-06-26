@@ -29,7 +29,7 @@ Layout
     background-image: url("resources\\banner2.jpg");
     background-attachment: fixed;
 	background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 
 .center {
@@ -38,7 +38,7 @@ Layout
     margin-right: auto;
 }
 
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -47,17 +47,17 @@ ul {
 }
 
 /* Sticky Navbar*/
-ul {
+ul.nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
 }
 
-li {
-    float: left
+.nav li{
+	float: left;
 }
 
-li a {
+.nav a {
     display: block;
     color: white;
     text-align: center;
@@ -65,7 +65,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.nav a:hover {
     background-color: #111;
 	color: #EF7F33;
 }
@@ -74,3 +74,25 @@ li a:hover {
     background-color: #EF7F33;
 }
 
+.nav button {
+	float: right;
+    padding: 8px;
+	border: none;
+    background-color: #EF7F33;
+	color: #FFF;
+	margin-top: 9px;
+    font-size: 18px;
+}
+
+.nav button:hover{
+	background-color: #555;
+	color: #EF7F33;
+}
+
+.nav input[type=text] {
+    float: right;
+    padding: 8px;
+    border: none;
+	margin-top: 9px;
+    font-size: 18px;
+}
