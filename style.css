@@ -1,1 +1,76 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body{
+	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+	color: black;
+}
+
+
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+.masthead {
+    background-image: url("resources\\banner2.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Sticky Navbar*/
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+	color: #EF7F33;
+}
+
+.active {
+    background-color: #EF7F33;
+}
 
