@@ -2,34 +2,37 @@
 Typography
 --------------------------------------------------------------*/
 body{
-	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
-	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
+ul.nav{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
 }
 
-p {
-	margin-bottom: 1.5em;
-	color: black;
+#title{
+	font-family: 'Kreon', serif;
+	font-weight: bold;
+	font-size: 40px;
 }
 
 
 /*--------------------------------------------------------------
 Layout
 --------------------------------------------------------------*/
+body{
+	margin: 0;
+}
 .masthead {
     background-image: url("resources\\banner2.jpg");
     background-attachment: fixed;
 	background-repeat: no-repeat;
     background-size: auto;
+}
+
+.masthead a{
+	display: block;
 }
 
 .center {
@@ -48,7 +51,7 @@ ul.nav {
 
 /* Sticky Navbar*/
 ul.nav {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -95,4 +98,51 @@ ul.nav {
     border: none;
 	margin-top: 9px;
     font-size: 18px;
+}
+
+.left-banner{
+	float: left;
+	background-color: #DDD;
+	width: 20%;
+	height: 1000px;
+}
+
+.right-banner{
+	float: right;
+	background-color: #DDD;
+	width: 20%;
+	height: 1000px;
+}
+
+.text-area{
+	float: left;
+	text-align: center;
+	width: 60%;
+	height: 1000px;
+}
+
+#title p{
+	color: #EF7F33;
+}
+
+.text-area hr{
+	margin-right: 10%;
+	margin-left: 10%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.info-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#call-box{
+	max-width: 200px;
+	float: left;
+}
+
+#mail-box{
+	max-width: 200px;
+	float: left;
 }
