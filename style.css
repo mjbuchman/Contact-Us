@@ -153,14 +153,15 @@ ul.nav {
 }
 
 .info-wrapper{
-	background-color: #333;
 	margin-left: auto;
 	margin-right: auto;
 	width: inherit;
 	height: 350px;
+	margin-bottom: 30px;
 }
 
 .info-wrapper img{
+	display: block;
 	padding-bottom: 30px;
 }
 
@@ -176,12 +177,39 @@ ul.nav {
 
 }
 
-.social-media{
+.social-media-wrapper{
 	width: 100%;
-	height: 430px;
+	height: 300px;
 	background-color: #EF7F33;
+	padding-top: 25px;
 }
 
-#social-media-title{
+.box-wrapper{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
 
+#facebook-box{
+	display: block;
+	float: left;
+	margin-right: 40px;
+	background-color: #FF9D5B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#twitter-box{
+	display: block;
+	float: left;
+	margin-right: 40px;
+	background-color: #FF9D5B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#linkedin-box{
+	display: block;
+	float: left;
+	background-color: #FF9D5B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
