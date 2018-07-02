@@ -203,25 +203,74 @@ ul.nav {
 	margin-top: 30px;
 }
 
-#facebook-box{
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
 	display: block;
 	float: left;
-	margin-right: 40px;
-	background-color: #FF9D5B;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 130px;
+	height: 130px;
 }
 
-#twitter-box{
-	display: block;
-	float: left;
-	margin-right: 40px;
-	background-color: #FF9D5B;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
 }
 
-#linkedin-box{
-	display: block;
-	float: left;
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+#facebook-box-front{
 	background-color: #FF9D5B;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#facebook-box-back{
+	background-color: #3B5998;
+}
+
+#twitter-box-front{
+	background-color: #FF9D5B;
+}
+
+#twitter-box-back{
+	background-color: #1DCAFF;
+}
+
+#linkedin-box-front{
+	background-color: #FF9D5B;
+}
+
+#linkedin-box-back{
+	background-color: #0077B5;
 }
