@@ -11,4 +11,7 @@ Clone the [repository](https://github.com/mjbuchman/typing-speed-test) and run t
 
 ## Resources Used
 ### Font:
-- 
+- https://fonts.googleapis.com/css?family=Montserrat
+- https://fonts.googleapis.com/css?family=Kreon
+### CSS Flip Animation
+- https://davidwalsh.name/css-flip
