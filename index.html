@@ -8,6 +8,7 @@
 	<script src="script.js" defer></script>
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Kreon">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,7 +41,7 @@
 				<hr>
 			</div>
 
-			<div class="info-wrapper">
+			<div class="info-container">
 				<div id="call-box">
 					<p>Call</p>
 					<img src="resources\callIcon.png" alt="Call Icon" class = "center" width = "120" height = "120"></img>
@@ -52,12 +53,12 @@
 					<img src="resources\mailIcon.png" alt="Mail Icon" class = "center" width = "120" height = "120"></img>
 					<p2>Reach out to us for more information at: <a href="#"><span>email@thunderducks.com</span></a></p2>
 				</div>
-			</div>  <!-- .info-wrapper-->
+			</div>  <!-- .info-container-->
 
-			<div class="social-media-wrapper">
+			<div class="social-media-container">
 				<div id="social-media-title">Or find us on social media</div>
 
-				<div class="box-wrapper">
+				<div class="box-container">
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 						<div class="flipper">
 							<div class="front">
@@ -102,13 +103,42 @@
 							</div>
 						</div>
 					</div>  <!-- .flip-container-->
-				</div>  <!-- .box-wrapper-->
-			</div>  <!-- .social-media-wrapper-->
+				</div>  <!-- .box-container-->
+			</div>  <!-- .social-media-container-->
 		</section>  <!-- .text-area-->
 
 		<footer>
+			<div class="footer-container">
+				<img src="resources\logo.png" alt="Company Logo" class = "center" width = "250" height = "250"></img>
+				<div class="left-text">
+					<p>Call Us</p>
+					<p2>888-888-1234</p2>
+					<p>Email Us</p>
+					<p2>email@thunderducks.com</p2>
 
-		</footer>  <!-- footer-->
+					<ul class="footer-nav">
+						<li><a href="#">Home</a></li>
+				  		<li><a href="#">About Us</a></li>
+						<li><a href="#">Roster</a></li>
+				  		<li><a href="#">News</a></li>
+				  		<li><a href="#">Schedule</a></li>
+				  		<li><a href="#">Standings</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>  <!-- .left-text-->
+
+				<div id="right-text">
+					<p2>Copyright © 2018 Michael Buchman<br>
+					All Rights Reserved</p2>
+				</div>  <!-- #right-text-->
+
+				<div class="footer-social">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+				</div>
+			</div>  <!-- .footer-container-->
+		</footer>  <!-- .footer-->
 
 
 		<aside class="right-banner"></aside>
