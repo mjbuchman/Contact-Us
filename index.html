@@ -52,30 +52,65 @@
 					<img src="resources\mailIcon.png" alt="Mail Icon" class = "center" width = "120" height = "120"></img>
 					<p2>Reach out to us for more information at: <a href="#"><span>email@thunderducks.com</span></a></p2>
 				</div>
-			</div>
+			</div>  <!-- .info-wrapper-->
 
 			<div class="social-media-wrapper">
 				<div id="social-media-title">Or find us on social media</div>
 
 				<div class="box-wrapper">
-					<div id="facebook-box">
-						<img src="resources\facebook.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img>
-					</div>
-					<div id="twitter-box">
-						<img src="resources\twitter.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img>
-					</div>
-					<div id="linkedin-box">
-						<img src="resources\linkedin.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img>
-					</div>
-				</div>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<div id="facebook-box-front">
+									<a href="#"><img src="resources\facebook.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+							<div class="back">
+								<div id="facebook-box-back">
+									<a href="#"><img src="resources\facebook.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- .flip-container-->
 
-			</div>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<div id="twitter-box-front">
+									<a href="#"><img src="resources\twitter.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+							<div class="back">
+								<div id="twitter-box-back">
+									<a href="#"><img src="resources\twitter.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- .flip-container-->
 
-		</section>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<div id="linkedin-box-front">
+									<a href="#"><img src="resources\linkedin.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+							<div class="back">
+								<div id="linkedin-box-back">
+									<a href="#"><img src="resources\linkedin.png" alt="Facebook Logo" class = "center" width = "130" height = "130"></img></a>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- .flip-container-->
+
+				</div>  <!-- .box-wrapper-->
+			</div>  <!-- .social-media-wrapper-->
+
+		</section>  <!-- .text-area-->
 
 
 		<aside class="right-banner"></aside>
-	</div>
+	</div>  <!-- #page-wrap-->
 </body>
 
 </html>
