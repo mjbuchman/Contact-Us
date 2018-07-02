@@ -17,17 +17,17 @@ ul.nav{
 	font-size: 40px;
 }
 
-.info-wrapper p{
+.info-container p{
 	font-size: 28px;
 	font-weight: bold;
 }
 
-.info-wrapper span{
+.info-container span{
 	color: #EF7F33;
 	font-weight: bold;
 }
 
-.info-wrapper a{
+.info-container a{
 	color: #EF7F33;
 }
 
@@ -38,6 +38,25 @@ ul.nav{
 	font-weight: bold;
 }
 
+.left-text{
+	line-height: .3;
+}
+
+.footer-container p{
+	font-family: 'Kreon', serif;
+	font-size: 18px;
+	color: #EF7F33;
+	font-weight: 500;
+}
+
+.footer-container p2{
+	font-size: 16px;
+	color: #888;
+}
+
+.footer-nav a{
+	color: #888;
+}
 /*--------------------------------------------------------------
 Layout
 --------------------------------------------------------------*/
@@ -168,14 +187,14 @@ ul.nav {
 	border-style: solid;
 }
 
-.info-wrapper{
+.info-container{
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
 }
 
-.info-wrapper img{
+.info-container img{
 	display: block;
 	margin-bottom: 40px;
 }
@@ -191,14 +210,14 @@ ul.nav {
 	float: left;
 }
 
-.social-media-wrapper{
+.social-media-container{
 	width: 100%;
 	height: 300px;
 	background-color: #EF7F33;
 	padding-top: 25px;
 }
 
-.box-wrapper{
+.box-container{
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
@@ -270,7 +289,7 @@ ul.nav {
 
 #twitter-box-back{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #1DCAFF;
+	background-color: #55ACEE;
 }
 
 #linkedin-box-front{
@@ -284,9 +303,74 @@ ul.nav {
 }
 
 footer{
+	display: table;
+	margin: auto;
 	background-color: #333;
 	width: 100%;
 	height: 250px;
 	position: absolute;
 	bottom: 0;
+}
+
+.left-text{
+	position: absolute;
+	top: 20px;
+	left: 18%;
+}
+
+ul.footer-nav{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 130px;
+	list-style-type: none;
+	line-height: 1;
+	columns: 2;
+}
+
+#right-text{
+	position: absolute;
+	top: 145px;
+	left: 66%;
+	text-align: right;
+}
+
+.footer-social{
+	display: inline-block;
+	position: absolute;
+	top: 60px;
+	left: 74%;
+
+}
+
+.fa{
+	text-align: right;
+    padding: 20px;
+    font-size: 18px;
+	height: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin{
+	background: #0077B5;
+	color: white;
 }
