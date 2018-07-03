@@ -100,6 +100,7 @@ body{
     margin-right: auto;
 }
 
+/* Navbar */
 ul.nav {
 	display: block;
 	min-width: 100%;
@@ -160,6 +161,7 @@ ul.nav {
 	margin-top: 9px;
     font-size: 18px;
 }
+/* Navbar end */
 
 .left-banner{
 	float: left;
@@ -229,7 +231,7 @@ ul.nav {
 	margin-top: 30px;
 }
 
-/* entire container, keeps perspective */
+/* Flip animation for social media bar */
 .flip-container {
 	perspective: 1000px;
 	display: block;
@@ -238,7 +240,6 @@ ul.nav {
 	margin-right: 20px;
 }
 
-/* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	transform: rotateY(180deg);
 }
@@ -248,7 +249,6 @@ ul.nav {
 	height: 130px;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -256,7 +256,6 @@ ul.nav {
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 
@@ -265,17 +264,16 @@ ul.nav {
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
+/* Flip animation for social media bar end*/
 
 #facebook-box-front{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
